@@ -17,7 +17,8 @@ class Solution {
         }
 
         //bucket list
-        List<Integer>[] bucket=new List[nums.length+1];
+        @SuppressWarnings("unchecked")
+        List<Integer>[] bucket = new List[nums.length + 1];
         for(Map.Entry<Integer,Integer> entry:map.entrySet()){
             if(bucket[entry.getValue()]==null){
                 bucket[entry.getValue()] = new ArrayList<>();
