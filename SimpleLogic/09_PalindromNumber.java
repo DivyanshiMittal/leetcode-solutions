@@ -11,11 +11,6 @@ class Solution {
             reverse=reverse*10+digit;
             x=x/10;
         }
-        if(copy==reverse){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return copy == reverse;
     }
 }
