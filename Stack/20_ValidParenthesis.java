@@ -2,7 +2,7 @@
 // Time: O(n) — single pass
 // Space: O(n) — stack can hold at most n/2 elements
 
-
+import java.util.*;
 class Solution {
     public boolean isValid(String s) {
         Deque<Character> stack=new ArrayDeque<>();
