@@ -1,3 +1,13 @@
+// Key insight — Amortized O(1):
+// Even though transfer looks like O(n), each element is transferred exactly once in its lifetime. So averaged across all operations it's O(1).
+
+// Complexity:
+// push → O(1)
+// pop/peek → Amortized O(1) — each element is moved at most once from stack1 to stack2
+// empty → O(1)
+// Space: O(n)
+
+
 
 import java.util.*;
 
